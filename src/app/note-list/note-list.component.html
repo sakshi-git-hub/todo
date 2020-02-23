@@ -1,0 +1,31 @@
+<p></p>
+
+<div class="regstyle">
+<div  class="backcolor">      
+  <h2>Note-list</h2>
+        
+        <table class="table table-bordered table-sm">
+          <thead>
+            <tr>
+            <th>ID</th>
+              <th>Topic</th>
+              <th>Message</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+            <tr *ngFor="let ar of array">
+              <td>{{ ar.id }}</td>
+                    <td>{{ar.topic}}</td>
+                    <td>{{ar.message}}</td>
+                    <td>  <button class="btn btn-light"> <a routerLink="/create-node/{{ ar.id }}" routerLinkActive="active">edit</a></button><br>
+                        <button class="btn btn-danger"(click)=removeData(ar.id)>Delete</button></td>
+                    
+            </tr>
+           
+           
+          </tbody>
+        </table>
+        </div>
+      </div>

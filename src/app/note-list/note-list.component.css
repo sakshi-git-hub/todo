@@ -1,0 +1,13 @@
+
+.regstyle{
+    
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-image: url(src/assets/regback.jpg);
+}
+.backcolor{
+    padding-top: 2%;
+    background-color: darkgray;
+    padding-bottom: 2%;
+   
+}
